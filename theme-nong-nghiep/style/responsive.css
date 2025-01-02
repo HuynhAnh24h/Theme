@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .headerNav{
+        display: none;
+    }
+    .mobileBtnBar{
+        visibility: visible;
+    }
+    .carousel-inner{
+        height: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carousel-inner{
+        height: 100%;
+    }
+  }
+
+
+@media (max-width: 576px) {
+    .carousel-inner {
+        height: 100%; /* Giảm chiều cao cho màn hình siêu nhỏ */
+    }
+}

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nông nghiệp</title>
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font -->
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header container-fluid m-0 p-0">
+        <div class="container headerContainer">
+            <div class="headerWrapper d-flex justify-content-between align-items-center">
+                <div class="headerLogo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="headerNav">
+                    <ul class="navList d-flex justify-content-between align-items-center gap-5">
+                        <li class="navItems">
+                            <a href="./index.html" class="navLink">Trang chủ</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./services.html" class="navLink">Dịch vụ</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./collection.html" class="navLink">Sản phẩm</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./about.html" class="navLink">Về chúng tôi</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./contact.html" class="navLink">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerEnd d-flex gap-2">
+                    <div class="headerBtnTranslate">
+                        VN
+                    </div>
+                    <div class="headerBtnCart headerIcon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="headerAuth headerIcon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="mobileBtnBar" id="btnOpenMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mobileNavbar" id="mobileNavbar">
+                <ul class="mobileNavList d-flex flex-column justify-content-between align-items-start gap-5">
+                    <li class="mobileNavItems">
+                        <a href="./index.html" class="mobileNavLink">Trang chủ</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./services.html" class="mobileNavLink">Dịch vụ</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./collection.html" class="mobileNavLink">Sản phẩm</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./about.html" class="mobileNavLink">Về chúng tôi</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./contact.html" class="mobileNavLink">Liên hệ</a>
+                    </li>
+                </ul>
+                <div class="headerCloseIcon" id="btnCloseMenu">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <!-- Slider Homepage -->
+    <div id="slideHomeAutoPlay" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active slideImage">
+                <img src="./assets/slide-1.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item slideImage">
+                <img src="./assets/slide-2.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item slideImage">
+                <img src="./assets/slide-3.jpg" class="d-block" alt="...">
+            </div>
+        </div>
+
+        <!-- Các nút điều hướng (optional) -->
+        <button class="carousel-control-prev " type="button" data-bs-target="#slideHomeAutoPlay" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon  homeSlidePrev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#slideHomeAutoPlay" data-bs-slide="next">
+            <span class="carousel-control-next-icon homeSlideNext" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Slider Homepage -->
+
+    <!-- Section Data -->
+    <div class="container-fluid m-0 p-0">
+        <div class="container mt-5 mb-5">
+            <div class="sectionTitle">
+                <p class="sectionTitleContent">Giới thiệu</p>
+            </div>
+            <div class="row mt-3 flex justify-content-center align-items-center">
+                <div class="col-md-6 homeAboutContent">
+                    <p class="mb-3">Công ty TNHH Hiệp Tài được thành lập từ năm 1993 với tiền thân là Doanh nghiệp tư
+                        nhân Hiệp Tài. Được thừa hưởng kinh nghiệm sản xuất và xuất khẩu lúa gạo hơn 25 năm, hiện nay
+                        Hiệp Tài đã và đang hoàn thiện dần chuổi sản xuất gạo khép kín hoàn toàn với mô hình cánh đồng
+                        mẫu lớn với việc kiểm soát chất lượng và truy suất nguồn gốc rõ ràng, cùng với nhà máy sản xuất
+                        đạt chứng nhận an toàn thực phẩm quốc tế HACCP và BRC (chứng nhận bỡi SGS).
+                        Với phương châm uy tín đi cùng với chất lượng, Hiệp Tài đã và đang cung cấp mặt hàng gạo cho các
+                        khách hàng nhập vào các thị trường khó tính như Châu Âu, Hong Kong, Singapore, Trung Quốc, Hàn
+                        Quốc…</p>
+                    <button class="customBtn">Xem thêm</button>
+                </div>
+                <div class="col-md-6 mt-3 md-mt-0">
+                    <div class="homeAboutImage">
+                        <img src="./assets/about-home-image.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section Data -->
+
+    <!-- Section Data -->
+    <div class="homeServices container-fluid m-0 p-0">
+        <div class="container mt-5 mb-5">
+            <div class="sectionTitle">
+                <p class="sectionTitleContent">Dịch vụ</p>
+            </div>
+            <div class="row mt-2 flex justify-content-between align-items-center">
+                <div class="col-md-4 ">
+                    <div class="card mt-3 homeCard">
+                        <img src="./assets/about-home-image.jpg" alt="">
+                        <p class="homeCardTitle mt-3 text-center">Dịch vụ chăm sóc cây trồng</p>
+                        <p class="homeCardDesc p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Distinctio nesciunt natus architecto veniam optio obcaecati labore blanditiis possimus enim
+                            quas unde rerum quam laboriosam odit ut nam molestias, commodi facilis.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 md-mt-0">
+                    <div class="card homeCard">
+                        <img src="./assets/about-home-image.jpg" alt="">
+                        <p class="homeCardTitle mt-3 text-center">Dịch vụ chăm sóc cây trồng</p>
+                        <p class="homeCardDesc p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Distinctio nesciunt natus architecto veniam optio obcaecati labore blanditiis possimus enim
+                            quas unde rerum quam laboriosam odit ut nam molestias, commodi facilis.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 md-mt-0">
+                    <div class="card homeCard">
+                        <img src="./assets/about-home-image.jpg" alt="">
+                        <p class="homeCardTitle mt-3 text-center">Dịch vụ chăm sóc cây trồng</p>
+                        <p class="homeCardDesc p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Distinctio nesciunt natus architecto veniam optio obcaecati labore blanditiis possimus enim
+                            quas unde rerum quam laboriosam odit ut nam molestias, commodi facilis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-3">
+                <button class="customBtn">Xem thêm dịch vụ</button>
+            </div>
+        </div>
+    </div>
+    <div class="homeServices container-fluid m-0 p-0">
+        <div class="container mt-5 mb-5">
+            <div class="sectionTitle">
+                <p class="sectionTitleContent">Sản phẩm</p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 1">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 1</h5>
+                          <p class="card-text">200.000vnđ</p>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 2">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 2</h5>
+                          <p class="card-text">$200.00</p>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 3">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 3</h5>
+                          <p class="card-text">$300.00</p>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 4">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 4</h5>
+                          <p class="card-text">$400.00</p>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 5">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 5</h5>
+                          <p class="card-text">$500.00</p>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 6">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 6</h5>
+                          <p class="card-text">$600.00</p>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+    </div>
+
+    <div class="homeServices container-fluid m-0 p-0">
+        <div class="container mt-5 mb-5">
+            <div class="sectionTitle">
+                <p class="sectionTitleContent">Bài viết</p>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div id="blogSlide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 1">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 1</h5>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 2">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 2</h5>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 3">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 3</h5>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 4">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 4</h5>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 5">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 5</h5>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 6">
+                        <div class="card-body text-center">
+                          <h5 class="card-title homeCardTitle">Product 6</h5>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button class="customBtn mt-3">
+                            <i class="fa-solid fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#blogSlide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#blogSlide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+    </div>
+
+    <div class="homeServices container-fluid m-0 p-0">
+        <div class="container mt-5 mb-5">
+            <div class="sectionTitle mb-5">
+                <p class="sectionTitleContent">Liên hệ</p>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <img src="./assets/about-home-image.jpg" />
+                </div>
+                <div class="col-md-6 mt-3">
+                    <form action="">
+                        <div class="mb-2 d-flex flex-column justify-content-start align-items-start">
+                            <label for="name mb-1" class="homeLabelContact">Họ và tên</label>
+                            <input type="text" id="name" class="homeContactInput">
+                        </div>
+                        <div class="mb-2 d-flex flex-column justify-content-start align-items-start">
+                            <label for="email" class="homeLabelContact">Email</label>
+                            <input type="text" id="name" class="homeContactInput">
+                        </div>
+                        <div class="mb-2 d-flex flex-column justify-content-start align-items-start">
+                            <label for="note" class="homeLabelContact">Lời nhắn</label>
+                            <textarea name="note" id="note" rows="4" class="homeContactInput"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="customBtn">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Gửi
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer container-fluid m-0 p-0">
+       <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-5 col-lg-2">
+                    <div class="footerLogo">
+                        <img src="./assets/logo.png" alt="">
+                    </div>
+                    <div class="footerSocical d-flex align-items-center gap-2 pt-3">
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Về chúng tôi</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Trang chủ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Dịch vụ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Sản phẩm</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">về chúng tôi</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Dịch vụ</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng mãn cầu</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng khóm</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng dứa </a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Nông dân 4.0</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ và trồng trọt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">sản phẩm</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Thuốc diệt cỏ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">thuốc trừ sâu</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Thuốc cháy</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Tăng trưởng nông sản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Bài viết</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ chăn nuôi</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ trồng trọt</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ phân bón</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Chọn giống</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Sủ dụng thuốc theo thời điểm</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Liên hệ</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#" class="footerLink">
+                                0123.456.789
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#" class="footerLink">
+                                0123.456.789
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#" class="footerLink">
+                                service@gmail.com
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#" class="footerLink">
+                                service@gmail.com
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="#" class="footerLink">
+                                street California USA
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </div>
+       <p class="text-center textFooter pb-2">@Copyright by 24hCoding Developer Team</p>
+    </div>
+    <!-- Footer -->
+
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

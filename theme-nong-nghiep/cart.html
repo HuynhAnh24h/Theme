@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nông nghiệp</title>
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font -->
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header container-fluid m-0 p-0">
+        <div class="container headerContainer">
+            <div class="headerWrapper d-flex justify-content-between align-items-center">
+                <div class="headerLogo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="headerNav">
+                    <ul class="navList d-flex justify-content-between align-items-center gap-5">
+                        <li class="navItems">
+                            <a href="./index.html" class="navLink">Trang chủ</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./services.html" class="navLink">Dịch vụ</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./collection.html" class="navLink">Sản phẩm</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./about.html" class="navLink">Về chúng tôi</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./contact.html" class="navLink">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerEnd d-flex gap-2">
+                    <div class="headerBtnTranslate">
+                        VN
+                    </div>
+                    <div class="headerBtnCart headerIcon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="headerAuth headerIcon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="mobileBtnBar" id="btnOpenMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mobileNavbar" id="mobileNavbar">
+                <ul class="mobileNavList d-flex flex-column justify-content-between align-items-start gap-5">
+                    <li class="mobileNavItems">
+                        <a href="./index.html" class="mobileNavLink">Trang chủ</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./services.html" class="mobileNavLink">Dịch vụ</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./collection.html" class="mobileNavLink">Sản phẩm</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./about.html" class="mobileNavLink">Về chúng tôi</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./contact.html" class="mobileNavLink">Liên hệ</a>
+                    </li>
+                </ul>
+                <div class="headerCloseIcon" id="btnCloseMenu">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <div class="container py-5">
+      <h1 class="mb-5 sectionTitleContent">Giỏ hàng</h1>
+      <div class="row">
+          <div class="col-lg-8">
+              <!-- Cart Items -->
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <div class="row cart-item mb-3">
+                          <div class="col-md-2">
+                             <div class="cartImgBox">
+                              <img src="https://via.placeholder.com/100" alt="Product 1" class="img-fluid rounded">
+                             </div>
+                          </div>
+                          <div class="col-md-2">
+                              <h5 class="card-title cartTitle">Product 1</h5>
+                              <p class="text-muted">Category: Electronics</p>
+                          </div>
+                          <div class="col-md-3">
+                              <h5 class="card-title cartTitle">Price</h5>
+                              <p class="text-muted">500.00vnđ</p>
+                          </div>
+                          <div class="col-md-2">
+                              <div class="input-group">
+                                  <button class="btn btn-outline-secondary btn-sm" type="button">-</button>
+                                  <input style="max-width:100px" type="text" class="form-control  form-control-sm text-center quantity-input" value="1">
+                                  <button class="btn btn-outline-secondary btn-sm" type="button">+</button>
+                              </div>
+                          </div>
+                          <div class="col-md-3 d-flex justify-content-end align-items-start gap-3">
+                              <p class="fw-bold homeCardTitle">$99.99</p>
+                              <button class="btn btn-sm btn-outline-danger">
+                                <i class="fa-solid fa-trash"></i>
+                                  </button>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="row cart-item">
+                        <div class="col-md-2">
+                           <div class="cartImgBox">
+                            <img src="https://via.placeholder.com/100" alt="Product 1" class="img-fluid rounded">
+                           </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="card-title cartTitle">Product 1</h5>
+                            <p class="text-muted">Category: Electronics</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="card-title cartTitle">Price</h5>
+                            <p class="text-muted">500.00 vnđ</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary btn-sm" type="button">-</button>
+                                <input style="max-width:100px" type="text" class="form-control  form-control-sm text-center quantity-input" value="1">
+                                <button class="btn btn-outline-secondary btn-sm" type="button">+</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-end align-items-start gap-3">
+                          <p class="fw-bold homeCardTitle">$99.99</p>
+                          <button class="btn btn-sm btn-outline-danger">
+                            <i class="fa-solid fa-trash"></i>
+                              </button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- Continue Shopping Button -->
+              <div class="text-start mb-4">
+                  <a href="#" class="customBtn">
+                      <i class="bi bi-arrow-left me-2"></i>Continue Shopping
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <!-- Cart Summary -->
+              <div class="card cart-summary">
+                  <div class="card-body">
+                      <h5 class="card-title cartTitle mb-4 sectionTitleContent">Order Summary</h5>
+                      <div class="d-flex justify-content-between mb-3">
+                          <span>Subtotal</span>
+                          <span>$199.97</span>
+                      </div>
+                      <div class="d-flex justify-content-between mb-3">
+                          <span>Shipping</span>
+                          <span>$10.00</span>
+                      </div>
+                      <div class="d-flex justify-content-between mb-3">
+                          <span>Tax</span>
+                          <span>$20.00</span>
+                      </div>
+                      <hr>
+                      <div class="d-flex justify-content-between mb-4 homeCardTitle">
+                          <strong>Total</strong>
+                          <strong>$229.97</strong>
+                      </div>
+                      <button class="customBtn w-100">Proceed to Checkout</button>
+                  </div>
+              </div>
+              <!-- Promo Code -->
+          </div>
+      </div>
+  </div>
+
+    <!-- Footer -->
+    <div class="footer container-fluid m-0 p-0">
+       <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-5 col-lg-2">
+                    <div class="footerLogo">
+                        <img src="./assets/logo.png" alt="">
+                    </div>
+                    <div class="footerSocical d-flex align-items-center gap-2 pt-3">
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Về chúng tôi</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Trang chủ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Dịch vụ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Sản phẩm</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">về chúng tôi</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Dịch vụ</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng mãn cầu</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng khóm</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng dứa </a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Nông dân 4.0</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ và trồng trọt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">sản phẩm</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Thuốc diệt cỏ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">thuốc trừ sâu</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Thuốc cháy</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Tăng trưởng nông sản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Bài viết</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ chăn nuôi</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ trồng trọt</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ phân bón</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Chọn giống</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Sủ dụng thuốc theo thời điểm</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Liên hệ</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#" class="footerLink">
+                                0123.456.789
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#" class="footerLink">
+                                0123.456.789
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#" class="footerLink">
+                                service@gmail.com
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#" class="footerLink">
+                                service@gmail.com
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="#" class="footerLink">
+                                street California USA
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </div>
+       <p class="text-center textFooter pb-2">@Copyright by 24hCoding Developer Team</p>
+    </div>
+    <!-- Footer -->
+
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

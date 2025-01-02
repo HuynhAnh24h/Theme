@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nông nghiệp</title>
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font -->
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header container-fluid m-0 p-0">
+        <div class="container headerContainer">
+            <div class="headerWrapper d-flex justify-content-between align-items-center">
+                <div class="headerLogo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="headerNav">
+                    <ul class="navList d-flex justify-content-between align-items-center gap-5">
+                        <li class="navItems">
+                            <a href="./index.html" class="navLink">Trang chủ</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./services.html" class="navLink">Dịch vụ</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./collection.html" class="navLink">Sản phẩm</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./about.html" class="navLink">Về chúng tôi</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./contact.html" class="navLink">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerEnd d-flex gap-2">
+                    <div class="headerBtnTranslate">
+                        VN
+                    </div>
+                    <div class="headerBtnCart headerIcon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="headerAuth headerIcon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="mobileBtnBar" id="btnOpenMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mobileNavbar" id="mobileNavbar">
+                <ul class="mobileNavList d-flex flex-column justify-content-between align-items-start gap-5">
+                    <li class="mobileNavItems">
+                        <a href="./index.html" class="mobileNavLink">Trang chủ</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./services.html" class="mobileNavLink">Dịch vụ</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./collection.html" class="mobileNavLink">Sản phẩm</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./about.html" class="mobileNavLink">Về chúng tôi</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./contact.html" class="mobileNavLink">Liên hệ</a>
+                    </li>
+                </ul>
+                <div class="headerCloseIcon" id="btnCloseMenu">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <div class="container my-5">
+        <div class="row">
+          <!-- Product Images -->
+          <div class="col-md-6 mb-4">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Product" class="img-fluid rounded mb-3 product-image" id="mainImage">
+              <div class="d-flex gap-3">
+                  <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 1" class="thumbnail rounded active" onclick="changeImage(event, this.src)">
+                  <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 2" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+                  <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 3" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+                  <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 4" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+                  <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080" alt="Thumbnail 4" class="thumbnail rounded" onclick="changeImage(event, this.src)">
+              </div>
+          </div>
+
+          <!-- Product Details -->
+          <div class="col-md-6">
+              <h2 class="mb-3 prodDetailTitle">Premium Wireless Headphones</h2>
+              <p class="text-muted mb-4">SKU: WH1000XM4</p>
+              <div class="mb-3">
+                  <span class="h4 me-2 prodDetailPrice">$349.99</span>
+                  <span class="text-muted"><s>$399.99</s></span>
+              </div>
+              <div class="mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  <span class="ms-2">4.5 (120 reviews)</span>
+              </div>
+              <p class="mb-4">Thuốc trừ sâu mang nhãn hiệu đầu con bò cung cấp cho nông dân sản phẩm trừ sâu chất lượng</p>
+              <div class="mb-4">
+                  <label for="quantity" class="form-label">Số lượng:</label>
+                  <input type="number" class="form-control" id="quantity" value="1" min="1" style="width: 80px;">
+              </div>
+              <button class="customBtn mt-3">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="customBtn mt-3">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Mua ngay
+              </button>
+              <div class="mt-4">
+                  <h5>Desc</h5>
+                  <ul>
+                      <li>Industry-leading noise cancellation</li>
+                      <li>30-hour battery life</li>
+                      <li>Touch sensor controls</li>
+                      <li>Speak-to-chat technology</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="homeServices container-fluid m-0 p-0">
+      <div class="container mt-5 mb-5">
+          <div class="sectionTitle">
+              <p class="sectionTitleContent">Bán chạy nhất</p>
+          </div>
+      </div>
+      <div class="container">
+          <div id="relativeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 1">
+                      <div class="card-body text-center">
+                        <h5 class="card-title homeCardTitle">Product 1</h5>
+                        <p class="card-text">200.000vnđ</p>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 2">
+                      <div class="card-body text-center">
+                        <h5 class="card-title homeCardTitle">Product 2</h5>
+                        <p class="card-text">$200.00</p>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 3">
+                      <div class="card-body text-center">
+                        <h5 class="card-title homeCardTitle">Product 3</h5>
+                        <p class="card-text">$300.00</p>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 4">
+                      <div class="card-body text-center">
+                        <h5 class="card-title homeCardTitle">Product 4</h5>
+                        <p class="card-text">$400.00</p>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 5">
+                      <div class="card-body text-center">
+                        <h5 class="card-title homeCardTitle">Product 5</h5>
+                        <p class="card-text">$500.00</p>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product 6">
+                      <div class="card-body text-center">
+                        <h5 class="card-title homeCardTitle">Product 6</h5>
+                        <p class="card-text">$600.00</p>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-eye"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="customBtn mt-3">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#relativeCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#relativeCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+  </div>
+    
+    <!-- Footer -->
+    <div class="footer container-fluid m-0 p-0">
+       <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-5 col-lg-2">
+                    <div class="footerLogo">
+                        <img src="./assets/logo.png" alt="">
+                    </div>
+                    <div class="footerSocical d-flex align-items-center gap-2 pt-3">
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Về chúng tôi</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Trang chủ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Dịch vụ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Sản phẩm</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">về chúng tôi</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Dịch vụ</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng mãn cầu</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng khóm</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng dứa </a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Nông dân 4.0</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ và trồng trọt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">sản phẩm</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Thuốc diệt cỏ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">thuốc trừ sâu</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Thuốc cháy</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Tăng trưởng nông sản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Bài viết</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ chăn nuôi</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ trồng trọt</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ phân bón</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Chọn giống</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Sủ dụng thuốc theo thời điểm</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Liên hệ</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#" class="footerLink">
+                                0123.456.789
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#" class="footerLink">
+                                0123.456.789
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#" class="footerLink">
+                                service@gmail.com
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#" class="footerLink">
+                                service@gmail.com
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="#" class="footerLink">
+                                street California USA
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </div>
+       <p class="text-center textFooter pb-2">@Copyright by 24hCoding Developer Team</p>
+    </div>
+    <!-- Footer -->
+
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
