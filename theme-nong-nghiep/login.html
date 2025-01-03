@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nông nghiệp</title>
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font -->
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header container-fluid m-0 p-0">
+        <div class="container headerContainer">
+            <div class="headerWrapper d-flex justify-content-between align-items-center">
+                <div class="headerLogo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="headerNav">
+                    <ul class="navList d-flex justify-content-between align-items-center gap-5">
+                        <li class="navItems">
+                            <a href="./index.html" class="navLink">Trang chủ</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./services.html" class="navLink">Dịch vụ</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./collection.html" class="navLink">Sản phẩm</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./about.html" class="navLink">Về chúng tôi</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./contact.html" class="navLink">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerEnd d-flex gap-2">
+                    <div class="headerBtnTranslate">
+                        VN
+                    </div>
+                    <div class="headerBtnCart headerIcon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="headerAuth headerIcon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="mobileBtnBar" id="btnOpenMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mobileNavbar" id="mobileNavbar">
+                <ul class="mobileNavList d-flex flex-column justify-content-between align-items-start gap-5">
+                    <li class="mobileNavItems">
+                        <a href="./index.html" class="mobileNavLink">Trang chủ</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./services.html" class="mobileNavLink">Dịch vụ</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./collection.html" class="mobileNavLink">Sản phẩm</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./about.html" class="mobileNavLink">Về chúng tôi</a>
+                    </li>
+                    <li class="mobileNavItems">
+                        <a href="./contact.html" class="mobileNavLink">Liên hệ</a>
+                    </li>
+                </ul>
+                <div class="headerCloseIcon" id="btnCloseMenu">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <div class="container my-5">
+            <div class="loginForm d-flex justify-content-center align-items-center">
+                <form action="" class="col-md-6 p-5 loginItems">
+                    <div class="mb-5">
+                        <h2 class="sectionTitleContent">Đăng nhập</h2>
+                    </div>
+                    <div class="mb-2 d-flex flex-column justify-content-start align-items-start">
+                        <label for="name" class="homeLabelContact">User name</label>
+                        <input type="text" id="name" class="homeContactInput">
+                    </div>
+                    <div class="mb-2 d-flex flex-column justify-content-start align-items-start">
+                        <label for="password" class="homeLabelContact">Password</label>
+                        <input type="text" id="password" class="homeContactInput">
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button class="customBtn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Đăng nhập
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer container-fluid m-0 p-0">
+       <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-5 col-lg-2">
+                    <div class="footerLogo">
+                        <img src="./assets/logo.png" alt="">
+                    </div>
+                    <div class="footerSocical d-flex align-items-center gap-2 pt-3">
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                        <div class="iconSocial">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Về chúng tôi</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Trang chủ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Dịch vụ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Sản phẩm</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">về chúng tôi</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Dịch vụ</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng mãn cầu</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng khóm</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Khoá học trồng dứa </a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Nông dân 4.0</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ và trồng trọt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">sản phẩm</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Thuốc diệt cỏ</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">thuốc trừ sâu</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Thuốc cháy</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Tăng trưởng nông sản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Bài viết</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ chăn nuôi</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ trồng trọt</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Công nghệ phân bón</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Chọn giống</a>
+                        </li>
+                        <li class="footerItems">
+                            <a href="#" class="footerLink">Sủ dụng thuốc theo thời điểm</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-5 col-lg-2 footerCol mt-3">
+                    <h3 class="text-uppercase pb-2">Liên hệ</h3>
+                    <ul class="footerList"> 
+                        <li class="footerItems">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#" class="footerLink">
+                                0123.456.789
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="#" class="footerLink">
+                                0123.456.789
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#" class="footerLink">
+                                service@gmail.com
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#" class="footerLink">
+                                service@gmail.com
+                            </a>
+                        </li>
+                        <li class="footerItems">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="#" class="footerLink">
+                                street California USA
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </div>
+       <p class="text-center textFooter pb-2">@Copyright by 24hCoding Developer Team</p>
+    </div>
+    <!-- Footer -->
+
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
